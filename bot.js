@@ -23,8 +23,6 @@ Number.prototype.toDivide = function() {
 	return number;
 }
 
-const ch = 100000000;
-
 console.log('Бот работает')
 
 const buttons = [
