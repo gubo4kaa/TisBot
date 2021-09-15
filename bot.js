@@ -103,7 +103,6 @@ const bot = new TelegramBot(token, {
 
 bot.on('message', (msg) => {
     const chatId = msg.chat.id; //получаем идентификатор диалога, чтобы отвечать именно тому пользователю, который нам что-то прислал
-    console.log(msg)
     // отправляем сообщение
     if (msg.text === 'Тех. поддержка') {
         bot.sendMessage(chatId, 'Горячая линия: *+78005005149*\nEmail: *mail@tis.tatar*', {
