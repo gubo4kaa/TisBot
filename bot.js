@@ -1,6 +1,6 @@
 const _ = require('lodash');
 const TelegramBot = require('node-telegram-bot-api'); // подключаем node-telegram-bot-api
-const token = '1991855297:AAEWr2uqCO643aUTjpkSXfQa6N6OvzSE_FM'; // тут токен кторый мы получили от botFather
+const token = ''; // тут токен кторый мы получили от botFather
 const axios = require('axios')
 const url = 'https://monitor.tis.tatar';
 const dataUri = '/Api/Db/OpenReport/onlineStats';
@@ -26,8 +26,7 @@ Number.prototype.toDivide = function () {
 console.log('Бот работает')
 
 const buttons = [
-    [
-        {
+    [{
             text: "Татарстан",
             callback_data: "tatar",
 
@@ -41,8 +40,7 @@ const buttons = [
             callback_data: "mo"
         }
     ],
-    [
-        {
+    [{
             text: "КБР",
             callback_data: "kbr"
         },
@@ -55,8 +53,7 @@ const buttons = [
             callback_data: "saratov"
         }
     ],
-    [
-        {
+    [{
             text: "Калининград",
             callback_data: "kaliningrad"
         },
@@ -81,8 +78,7 @@ const key_back = [
 
 ];
 
-const fields = [
-    {
+const fields = [{
         code: 'ecg',
         name: 'ЭКГ',
     },
